@@ -1,0 +1,528 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: scroll; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+
+@font-face {
+    font-family: "Akkurat-Pro-Regular";
+    src:url("lineto-akkurat-pro-regular.eot");
+    src:url("lineto-akkurat-pro-regular.eot?#iefix") format("embedded-opentype"),
+        url("lineto-akkurat-pro-regular.woff2") format("woff2"),
+        url("lineto-akkurat-pro-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('SUISSEINTL-BLACK.WOFF') format('woff');
+    font-family: 'Suisse Intl Black';
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    src: url('SUISSEINTL-BOLDITALIC.WOFF') format('woff');
+    font-family: 'Suisse Intl Regular';
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    src: url('SUISSEINTL-BOLD.WOFF') format('woff');
+    font-family: 'Suisse Intl Regular';
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Suisse Intl Regular';
+    src: url('SUISSEINTL-REGULAR.WOFF') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    src: url('SUISSEINTL-REGULARITALIC.WOFF') format('woff');
+    font-family: 'Suisse Intl Regular';
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    src: url('SUISSEINTL-LIGHT.WOFF') format('woff');
+    font-family: 'Suisse Intl Regular';
+    font-weight: lighter;
+    font-style: normal
+}
+@font-face {
+    src: url('SUISSEINTL-LIGHTITALIC.WOFF') format('woff');
+    font-family: 'Suisse Intl Regular';
+    font-weight: lighter;
+    font-style: italic;
+
+}
+@font-face {
+    src: url('SUISSEINTL-THIN.WOFF') format('woff');
+    font-family: 'Suisse Intl Thin';
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    src: url('SUISSEINTL-THINITALIC.WOFF') format('woff');
+    font-family: 'Suisse Intl Thin Italic';
+    font-weight: normal;
+    font-style: normal
+}
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+@media (min-width: 901px) {
+  html {
+    font-size: 100%; } }
+
+@media (min-width: 601px) and (max-width: 900px) {
+  html {
+    font-size: 90%; } }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 75%; 
+      } 
+  }
+
+body {
+  font-family: "Akkurat-Pro-Regular";
+  margin: 1rem;
+  font-size: 1.3rem; }
+
+a {
+  color: inherit; }
+
+h2 {
+  font-weight: bold; }
+
+main {
+  position: relative;
+  z-index: 10;
+  max-width: 50rem; }
+  main .text p {
+    margin-bottom: 1rem; }
+
+.pagepart {
+  margin-top: 5rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 20rem; }
+  .pagepart > .inner {
+    padding: 2rem;
+    background-color: white; }
+    @media (max-width: 900px) {
+      .pagepart > .inner {
+        padding: 0.5rem; 
+        } 
+      }
+      @media (min-width: 900px) {
+      .pagepart > .inner {
+        margin-top: 200px;
+        } 
+      }
+  @media (max-width: 900px) {
+    .pagepart {
+      padding: 3rem; } 
+    }
+
+nav {
+  background-color: #fff;
+  margin-bottom: 1rem; }
+  nav a {
+    text-decoration: none;
+/*    display: block; */
+  }
+
+@media (max-width: 900px) {
+  nav.desktop {
+    display: none; }
+  nav {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding: 0.5rem 0.5rem;
+    } 
+  }
+
+@media (min-width: 901px) {
+  nav.mobile {
+    display: none; }
+  nav {
+    width: 67%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; }
+  main {
+    margin-left: 25%;
+    max-width: 50%; } }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.researchers {
+  grid-template-columns: repeat(2, 50%);
+  max-width: 100%;
+  display: grid; }
+  @media (min-width: 601px) and (max-width: 900px) {
+    .researchers {
+      grid-template-columns: repeat(4, 25%); } }
+  @media (min-width: 901px) {
+    .researchers {
+      grid-template-columns: repeat(5, 20%); } }
+  .researchers .researcher {
+    overflow: hidden;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer; }
+    .researchers .researcher:hover img {
+      -webkit-filter: grayscale(0%);
+              filter: grayscale(0%); }
+    .researchers .researcher h2 {
+      text-decoration: none;
+      text-align: right;
+       }
+    .researchers .researcher img {
+      border-radius: 100%;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+      -webkit-transition: -webkit-filter 0.3s ease;
+      transition: -webkit-filter 0.3s ease;
+      transition: filter 0.3s ease;
+      transition: filter 0.3s ease, -webkit-filter 0.3s ease; }
+    .researchers .researcher .text {
+      font-size: 0.9rem; }
+
+.logo {
+    position: relative;
+    z-index: 999 !important;
+    margin-bottom: 100px !important;
+    margin-right: 0;
+    margin-top: 0px;
+    margin-left: -20px;
+    padding-top: 10px;
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: none;  
+  }
+}
+
+.top {
+  margin:10px;
+  z-index: 1000;
+}
+
+.title {
+  font-size:100px; 
+  margin-top:50px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .title {
+    display:none;
+    font-size: 30px; 
+  } 
+}
+
+@media (max-width: 600px) {
+  .title 
+  {
+    font-size: 100%; 
+  }
+}
+
+.types {
+  margin: 1rem 0; }
+  .types span {
+    text-decoration: underline; }
+
+.layers {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch; }
+  .layers .parallax {
+    -webkit-perspective: 10px;
+            perspective: 10px;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .layers .parallax .text {
+      margin: 4vw;
+      width: 100%;
+      max-width: 41rem;
+      margin: 0 auto; }
+    .layers .parallax .layer0 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-size: 100% auto; }
+    .layers .parallax .layer1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-size: 100% auto; }
+    .layers .parallax .layer2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-size: 100% auto; }
+    .layers .parallax .layer3 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-size: 100% auto; }
+    .layers .parallax .layer4 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-size: 100% auto; }
+    .layers .parallax .layer5 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-size: 100% auto; }
+    .layers .parallax .layer0 {
+      -webkit-transform: translateZ(-4px);
+              transform: translateZ(-4px); }
+    .layers .parallax .layer1 {
+      -webkit-transform: translateZ(-3px);
+              transform: translateZ(-3px); }
+    .layers .parallax .layer2 {
+      -webkit-transform: translateZ(-2px);
+              transform: translateZ(-2px); }
+    .layers .parallax .layer3 {
+      -webkit-transform: translateZ(-1px);
+              transform: translateZ(-1px); }
+    .layers .parallax .layer4 {
+      -webkit-transform: translateZ(0px);
+              transform: translateZ(0px); }
+    .layers .parallax .layer5 {
+      position: relative;
+      -webkit-transform: translateZ(2px);
+              transform: translateZ(2px);
+      pointer-events: none; }
+      .layers .parallax .layer5 .donut {
+        margin-bottom: 14rem; }
+      .layers .parallax .layer5 .donut:nth-child(2n+1) {
+        position: relative;
+        left: calc(50vw + 14rem);
+        width: 30rem; }
+      .layers .parallax .layer5 .donut:nth-child(2n) {
+        position: relative;
+        left: calc(50vw - 44rem);
+        width: 30rem; }
+    .layers .parallax img {
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.overlaytexts .overlaytext {
+  position: fixed;
+  top: 3vw;
+  left: 3vw;
+  width: calc(100% - 6vw);
+  height: calc(100vh - 6vw);
+  z-index: 1000;
+  display: none; }
+  .overlaytexts .overlaytext .wrap {
+    position: relative;
+    max-width: 40rem;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5vw rgba(0, 0, 0, 0.5);
+    padding: 3.5rem 1rem;
+    overflow-y: auto;
+    background-color: #fff; }
+    .overlaytexts .overlaytext .wrap .cross {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      width: 1.6rem;
+      height: 1.6rem; }
+      .overlaytexts .overlaytext .wrap .cross:hover {
+        opacity: 0.7; }
+      .overlaytexts .overlaytext .wrap .cross svg {
+        width: 100%;
+        height: 100%; }
+    .overlaytexts .overlaytext .wrap .inner {
+      max-width: 35rem;
+      margin: 0 auto;
+      padding-bottom: 3rem; }
+      .overlaytexts .overlaytext .wrap .inner p {
+        margin-bottom: 1rem; }
+      .overlaytexts .overlaytext .wrap .inner .head {
+        text-align: center; }
+      .overlaytexts .overlaytext .wrap .inner h2 {
+        margin: 2rem 0; }
+      .overlaytexts .overlaytext .wrap .inner img {
+        border-radius: 100%;
+        width: 100%;
+        max-width: 300px; }
+  .overlaytexts .overlaytext.visible {
+    display: block; }
+
+.pagepart img {
+  margin: 1rem;
+  vertical-align: middle; }
+
+.pagepart .page-contact {
+  min-height: 90vh; }
+  .pagepart .page-contact > .inner {
+    min-height: 50vh; }
+
+.nice-button {
+    font-size: inherit;
+    display:inline-block;
+    padding:8px 16px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+}
+.nice-button:hover {
+    color:#000!important;
+    background-color:#FFFF00!important
+}
+
+.fixed-mobile{
+        overflow: hidden;
+        position: fixed !important;  
+        font-size: 19px;
+        left: 50%;
+        width: 100%;
+        margin-bottom: 150px;
+        margin-top: 50px;
+        transform: translate(-50%,-50%);
+}
+
+ .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+/*    background-color: #ccc;*/
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+} 
+
+.team {
+  text-align: center;
+  text-decoration: none;
+}
